@@ -23,7 +23,9 @@ namespace CaesarCipher
                 else if(charInAscii >= 97 && charInAscii <= 122){
                     charInAscii = CaesarCipherHelper(charInAscii, lowerAlphabet, shiftKey);
                 }
+                // typecasting an ascii value to a character
                 char cipherChar = (char)charInAscii;
+                // typcasting a character to a string and appending it to output string
                 cipher += cipherChar.ToString();
             }
             return cipher;
