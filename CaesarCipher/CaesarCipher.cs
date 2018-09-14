@@ -16,11 +16,11 @@ namespace CaesarCipher
             foreach(char c in text){
                 charInAscii = c;
                 // if alphabet is a uppercase
-                if(charInAscii >= 65 && charInAscii <= 90){
+                if(charInAscii >= 'A' && charInAscii <= 'Z'){
                     charInAscii = CaesarCipherHelper(charInAscii, upperAlphabet, shiftKey);
                 }
                 // if alphabet is a lowercase
-                else if(charInAscii >= 97 && charInAscii <= 122){
+                else if(charInAscii >= 'a' && charInAscii <= 'z'){
                     charInAscii = CaesarCipherHelper(charInAscii, lowerAlphabet, shiftKey);
                 }
                 // typecasting an ascii value to a character
